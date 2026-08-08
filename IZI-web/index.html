@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IZI AI — AI-инструменты для премиальных рекламных видео | Ташкент</title>
+<meta name="description" content="IZI AI — школа в Ташкенте, где операторское мастерство встречается с искусственным интеллектом. Онлайн и офлайн курсы по созданию премиальных рекламных видео с помощью AI.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img class="brand-logo-img" src="assets/logo-lockup.png" alt="IZI AI">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" data-i18n="nav.about">О нас</a>
+      <a href="#team" data-i18n="nav.team">Команда</a>
+      <a href="#brands" data-i18n="nav.brands">Бренды</a>
+      <a href="#courses" data-i18n="nav.courses">Курсы</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+      </div>
+      <a href="#courses" class="btn btn-primary btn-small" data-i18n="nav.cta">Записаться</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" data-i18n="nav.about">О нас</a>
+    <a href="#team" data-i18n="nav.team">Команда</a>
+    <a href="#brands" data-i18n="nav.brands">Бренды</a>
+    <a href="#courses" data-i18n="nav.courses">Курсы</a>
+    <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    <a href="#courses" class="btn btn-primary" data-i18n="nav.cta">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <canvas id="networkCanvas" class="network-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Ташкент, Узбекистан</p>
+      <h1 class="hero-title">
+        <span class="reveal" data-i18n="hero.title1">Операторское мастерство.</span>
+        <span class="reveal" data-i18n="hero.title2">Усиленное <em class="accent">искусственным интеллектом</em>.</span>
+      </h1>
+      <p class="hero-sub reveal" data-i18n="hero.sub">Первая в Узбекистане школа, где кинопроизводство встречается с AI-инструментами. Мы учим создавать премиальные рекламные видео для брендов — и зарабатывать на этом.</p>
+      <div class="hero-cta reveal">
+        <a href="#courses" class="btn btn-primary btn-large magnetic" data-i18n="hero.ctaPrimary">Записаться в лист ожидания</a>
+        <a href="#about" class="btn btn-ghost btn-large magnetic" data-i18n="hero.ctaSecondary">Узнать больше</a>
+      </div>
+    </div>
+    <div class="scroll-hint reveal" aria-hidden="true">
+      <span></span>
+      <small data-i18n="hero.scroll">Листайте вниз</small>
+    </div>
+  </section>
+
+  <!-- ================= BRANDS MARQUEE ================= -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <p class="section-kicker reveal" data-i18n="brands.kicker">С кем мы работали</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Accor</span><span>Burzujs</span><span>Le Petit Chef</span><span>Pullman</span><span>Prike</span><span>Benelux</span><span>Don Julio</span><span>Johnnie Walker</span><span>Harper Woolf</span><span>Positano</span>
+        <span>Accor</span><span>Burzujs</span><span>Le Petit Chef</span><span>Pullman</span><span>Prike</span><span>Benelux</span><span>Don Julio</span><span>Johnnie Walker</span><span>Harper Woolf</span><span>Positano</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="section-kicker reveal" data-i18n="about.kicker">О нас</p>
+        <h2 class="section-title reveal" data-i18n="about.title">Знания из Европы. Практика — в Ташкенте.</h2>
+        <p class="reveal" data-i18n="about.p1">IZI AI — образовательный проект, который соединяет операторское мастерство (DoP) и передовые AI-инструменты для создания рекламных видео премиального уровня.</p>
+        <p class="reveal" data-i18n="about.p2">Мы привозим в Узбекистан подход, проверенный на международных рекламных кампаниях, и учим новое поколение узбекистанских креаторов создавать видео мирового уровня — и зарабатывать на этом, не выезжая за пределы страны.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="about.stat1">международных брендов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label" data-i18n="about.stat2">континента практики</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="1">0</span>
+          <span class="stat-label" data-i18n="about.stat3">школа AI-видео в Узбекистане</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEAM ================= -->
+  <section class="team" id="team">
+    <div class="container">
+      <p class="section-kicker reveal" data-i18n="team.kicker">Команда</p>
+      <h2 class="section-title reveal" data-i18n="team.title">Люди, которые этому научат</h2>
+
+      <article class="team-lead reveal">
+        <div class="team-lead-photo">
+          <img src="assets/Iskandar.PNG" alt="Iskandar Nurmatov">
+        </div>
+        <div class="team-lead-info">
+          <span class="team-lead-tag" data-i18n="team.iskandar.tag">Основатель IZI AI</span>
+          <h3>Iskandar Nurmatov</h3>
+          <p class="team-role" data-i18n="team.iskandar.role">AI-специалист &amp; DoP</p>
+          <p class="team-bio" data-i18n="team.iskandar.bio">AI-специалист и режиссёр операторской постановки (DoP). Работал над рекламными кампаниями для Accor, Burzujs, Le Petit Chef, Pullman, Prike, Benelux, Don Julio, Johnnie Walker, Harper Woolf и Positano. Знания и опыт получил в Европе, где на стыке классического кинопроизводства и AI-инструментов сформировал собственный подход к созданию премиальных рекламных видео.</p>
+          <ul class="team-brand-list">
+            <li>Accor</li><li>Burzujs</li><li>Le Petit Chef</li><li>Pullman</li><li>Prike</li><li>Benelux</li><li>Don Julio</li><li>Johnnie Walker</li><li>Harper Woolf</li><li>Positano</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="team-support reveal">
+        <div class="team-support-info">
+          <h4>Mirolim Miragzamov</h4>
+          <p class="team-role" data-i18n="team.mirolim.role">Marketing &amp; Sales, основатель Octa Creative Agency</p>
+          <p class="team-bio" data-i18n="team.mirolim.bio">Маркетинг- и sales-специалист, основатель креативного агентства Octa Creative Agency. Опыт и знания в области маркетинга получил в Европе. В IZI AI отвечает за продвижение, продажи и полное сопровождение студентов на протяжении всего курса — от первого урока до первого коммерческого проекта.</p>
+        </div>
+        <img class="team-partner-logo" src="assets/octa-logo.png" alt="Octa Creative Agency">
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <p class="section-kicker reveal" data-i18n="courses.kicker">Обучение</p>
+      <h2 class="section-title reveal" data-i18n="courses.title">Курсы уже в разработке</h2>
+      <p class="section-sub reveal" data-i18n="courses.sub">Онлайн и офлайн форматы для тех, кто хочет создавать премиальные AI-видео для брендов и зарабатывать на этом.</p>
+
+      <div class="course-grid">
+        <article class="course-card reveal" data-tilt>
+          <span class="badge-soon" data-i18n="courses.badge">Скоро</span>
+          <h3 data-i18n="courses.online.title">Онлайн-курс</h3>
+          <p data-i18n="courses.online.desc">Изучайте AI-инструменты для видео из любой точки мира: практические модули, разбор реальных кейсов брендов, обратная связь от менторов.</p>
+          <ul class="course-list">
+            <li data-i18n="courses.online.li1">Гибкий график обучения</li>
+            <li data-i18n="courses.online.li2">Разбор реальных проектов</li>
+            <li data-i18n="courses.online.li3">Обратная связь от Iskandar и Mirolim</li>
+          </ul>
+        </article>
+
+        <article class="course-card reveal" data-tilt>
+          <span class="badge-soon" data-i18n="courses.badge">Скоро</span>
+          <h3 data-i18n="courses.offline.title">Офлайн-курс в Ташкенте</h3>
+          <p data-i18n="courses.offline.desc">Живые занятия в Ташкенте: студийные съёмки, работа с оборудованием и полный AI-пайплайн — от идеи до готового ролика для бренда.</p>
+          <ul class="course-list">
+            <li data-i18n="courses.offline.li1">Занятия вживую с командой IZI AI</li>
+            <li data-i18n="courses.offline.li2">Съёмочная практика</li>
+            <li data-i18n="courses.offline.li3">Поддержка в первых заказах</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="waitlist reveal" id="waitlist">
+        <div class="waitlist-copy">
+          <h3 data-i18n="courses.waitlist.title">Оставьте заявку — сообщим о старте первыми</h3>
+          <p data-i18n="courses.waitlist.sub">Заполните форму, и мы свяжемся с вами в WhatsApp, как только откроется набор.</p>
+        </div>
+        <form class="waitlist-form" id="waitlistForm">
+          <input type="text" name="name" required placeholder="Имя" data-i18n-placeholder="courses.waitlist.name">
+          <input type="tel" name="phone" required placeholder="Телефон" data-i18n-placeholder="courses.waitlist.phone">
+          <select name="format">
+            <option value="Онлайн" data-i18n="courses.waitlist.optOnline">Онлайн-курс</option>
+            <option value="Офлайн" data-i18n="courses.waitlist.optOffline">Офлайн-курс (Ташкент)</option>
+          </select>
+          <button type="submit" class="btn btn-primary magnetic" data-i18n="courses.waitlist.submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="section-kicker reveal" data-i18n="contact.kicker">Контакты</p>
+        <h2 class="section-title reveal" data-i18n="contact.title">Готовы обсудить обучение или проект?</h2>
+        <p class="section-sub reveal" data-i18n="contact.sub">Пишите или звоните — ответим в Instagram или WhatsApp.</p>
+      </div>
+      <div class="contact-cards reveal">
+        <a class="contact-card magnetic" href="tel:+998990300505">
+          <span class="contact-label" data-i18n="contact.phone">Телефон</span>
+          <span class="contact-value">+998 99 030 05 05</span>
+        </a>
+        <a class="contact-card magnetic" href="https://instagram.com/izi.ai.education" target="_blank" rel="noopener">
+          <span class="contact-label" data-i18n="contact.igEdu">Instagram — курсы</span>
+          <span class="contact-value">@izi.ai.education</span>
+        </a>
+        <a class="contact-card magnetic" href="https://instagram.com/octa.creative.agency" target="_blank" rel="noopener">
+          <span class="contact-label" data-i18n="contact.igOcta">Instagram — Octa Creative Agency</span>
+          <span class="contact-value">@octa.creative.agency</span>
+        </a>
+        <a class="contact-card magnetic" href="https://wa.me/998990300505" target="_blank" rel="noopener">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value" data-i18n="contact.write">Написать</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand brand-footer">
+      <img class="brand-logo-img brand-logo-img--light" src="assets/logo-lockup.png" alt="IZI AI">
+    </a>
+    <p class="footer-note" data-i18n="footer.note">Ташкент, Узбекистан — AI-школа премиального видео.</p>
+    <p class="footer-copy">© <span id="year"></span> IZI AI</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
