@@ -23,8 +23,8 @@ const I18N = {
     team: {
       kicker:"Команда",
       title:"Люди, которые этому научат",
-      iskandar:{ tag:"Основатель IZI AI", role:"AI-специалист &amp; DoP", bio:"AI-специалист и режиссёр операторской постановки (DoP). Работал над рекламными кампаниями для Accor, Burzujs, Le Petit Chef, Pullman, Prike, Benelux, Don Julio, Johnnie Walker, Harper Woolf и Positano. Знания и опыт получил в Европе, где на стыке классического кинопроизводства и AI-инструментов сформировал собственный подход к созданию премиальных рекламных видео." },
-      mirolim:{ role:"Marketing &amp; Sales, основатель Octa Creative Agency", bio:"Маркетинг- и sales-специалист, основатель креативного агентства Octa Creative Agency. Опыт и знания в области маркетинга получил в Европе. В IZI AI отвечает за продвижение, продажи и полное сопровождение студентов на протяжении всего курса — от первого урока до первого коммерческого проекта." }
+      iskandar:{ tag:"Основатель IZI AI", role:"AI-специалист &amp; DoP", bio:"AI-специалист и режиссёр операторской постановки (DoP). Строит практику на международных, преимущественно европейских брендах. Знания и опыт получил в Европе, где на стыке классического кинопроизводства и AI-инструментов сформировал собственный подход к созданию премиальных рекламных видео." },
+      mirolim:{ role:"Marketing &amp; Sales, основатель Octa Creative Agency", bio:"Маркетинг- и sales-специалист, основатель креативного агентства Octa Creative Agency. Опыт и знания в области маркетинга получил в Европе, а практику строит на узбекистанских брендах. Отвечает за продвижение, продажи и полное сопровождение студентов на протяжении всего курса — от первого урока до первого коммерческого проекта." }
     },
     courses: {
       kicker:"Обучение",
@@ -69,8 +69,8 @@ const I18N = {
     team: {
       kicker:"Jamoa",
       title:"Sizni shunga o'rgatadigan odamlar",
-      iskandar:{ tag:"IZI AI asoschisi", role:"AI-mutaxassis &amp; DoP", bio:"AI-mutaxassis va operator-rejissyor (DoP). Accor, Burzujs, Le Petit Chef, Pullman, Prike, Benelux, Don Julio, Johnnie Walker, Harper Woolf va Positano kabi brendlarning reklama loyihalarida ishlagan. Bilim va tajribasini Yevropada orttirgan, u yerda klassik video ishlab chiqarish va AI vositalarini uyg'unlashtirib, premium reklama videolarini yaratish bo'yicha o'z uslubini shakllantirgan." },
-      mirolim:{ role:"Marketing &amp; Sotuvlar, Octa Creative Agency asoschisi", bio:"Marketing va sotuvlar bo'yicha mutaxassis, Octa Creative Agency ijodiy agentligi asoschisi. Marketing sohasidagi bilim va tajribasini Yevropada orttirgan. IZI AI loyihasida targ'ibot, sotuvlar va talabalarni butun kurs davomida — birinchi darsdan birinchi tijorat loyihasigacha — to'liq qo'llab-quvvatlash uchun javobgar." }
+      iskandar:{ tag:"IZI AI asoschisi", role:"AI-mutaxassis &amp; DoP", bio:"AI-mutaxassis va operator-rejissyor (DoP). Amaliyotini xalqaro, asosan yevropalik brendlar asosida quradi. Bilim va tajribasini Yevropada orttirgan, u yerda klassik video ishlab chiqarish va AI vositalarini uyg'unlashtirib, premium reklama videolarini yaratish bo'yicha o'z uslubini shakllantirgan." },
+      mirolim:{ role:"Marketing &amp; Sotuvlar, Octa Creative Agency asoschisi", bio:"Marketing va sotuvlar bo'yicha mutaxassis, Octa Creative Agency ijodiy agentligi asoschisi. Marketing sohasidagi bilim va tajribasini Yevropada orttirgan, amaliyotini esa o'zbekistonlik brendlar asosida quradi. Targ'ibot, sotuvlar va talabalarni butun kurs davomida — birinchi darsdan birinchi tijorat loyihasigacha — to'liq qo'llab-quvvatlashga javobgar." }
     },
     courses: {
       kicker:"Ta'lim",

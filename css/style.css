@@ -349,8 +349,8 @@ button{ font-family: inherit; cursor:pointer; }
 .team-support-info{ padding: 36px 40px 36px 0; display:flex; flex-direction:column; justify-content:center; }
 .team-support-info h4{ font-family: var(--font-display); font-weight:600; font-size:1.4rem; }
 .team-support .team-role{ margin-top:6px; margin-bottom:14px; }
-.team-support .team-bio{ font-size:.94rem; max-width:520px; }
-.team-partner-logo{ margin-top:22px; height:32px; width:auto; opacity:.85; align-self:flex-start; }
+.team-support .team-bio{ font-size:.94rem; max-width:560px; }
+.team-support .team-brand-list{ max-width:560px; }
 
 /* ============================================================
    Courses
