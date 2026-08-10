@@ -1,7 +1,7 @@
 const ALLOWED_ORIGINS = new Set([
   'https://iisgib.github.io',
-  'https://iziai-education.com',
-  'https://www.iziai-education.com',
+  'https://iziai.academy',
+  'https://www.iziai.academy',
 ]);
 
 function corsHeaders(origin) {
