@@ -42,7 +42,7 @@ const I18N = {
       phone:"Телефон", igEdu:"Instagram — курсы", igOcta:"Instagram — Octa Creative Agency", write:"Написать"
     },
     footer: { note:"Ташкент, Узбекистан — AI-школа премиального видео." },
-    toast: { success:"Спасибо! Мы свяжемся с вами в WhatsApp.", error:"Заполните имя и телефон." }
+    toast: { success:"Отправлено успешно!", sending:"Отправка...", error:"Заполните имя и телефон.", sendError:"Не удалось отправить. Попробуйте ещё раз или напишите в WhatsApp." }
   },
 
   uz: {
@@ -88,7 +88,7 @@ const I18N = {
       phone:"Telefon", igEdu:"Instagram — kurslar", igOcta:"Instagram — Octa Creative Agency", write:"Yozish"
     },
     footer: { note:"Toshkent, O'zbekiston — premium video AI-maktabi." },
-    toast: { success:"Rahmat! Siz bilan WhatsApp orqali bog'lanamiz.", error:"Ism va telefon raqamini kiriting." }
+    toast: { success:"Muvaffaqiyatli yuborildi!", sending:"Yuborilmoqda...", error:"Ism va telefon raqamini kiriting.", sendError:"Yuborib bo'lmadi. Qaytadan urinib ko'ring yoki WhatsApp orqali yozing." }
   }
 };
 

@@ -1,0 +1,6 @@
+name = "izi-ai-waitlist"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+TELEGRAM_CHAT_ID = "-5431218794"

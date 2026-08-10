@@ -112,7 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Waitlist form -> WhatsApp ---------- */
+  /* ---------- Waitlist form -> Telegram relay ---------- */
+  const TELEGRAM_RELAY_URL = 'https://izi-ai-waitlist.iisgib.workers.dev';
   const form = document.getElementById('waitlistForm');
   const toast = document.getElementById('toast');
   let toastTimer;
@@ -122,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
   }
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = form.name.value.trim();
     const phone = form.phone.value.trim();
@@ -132,12 +133,25 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast(i18nGet(lang, 'toast.error'));
       return;
     }
-    const text = lang === 'uz'
-      ? `Salom! Menim ismim ${name}. IZI AI kursiga (${format}) yozilishni xohlayman. Telefon: ${phone}`
-      : `Здравствуйте! Меня зовут ${name}. Хочу записаться на курс IZI AI (${format}). Телефон: ${phone}`;
-    window.open(`https://wa.me/998990300505?text=${encodeURIComponent(text)}`, '_blank');
-    showToast(i18nGet(lang, 'toast.success'));
-    form.reset();
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalLabel = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = i18nGet(lang, 'toast.sending');
+    try {
+      const res = await fetch(TELEGRAM_RELAY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, format, lang }),
+      });
+      if (!res.ok) throw new Error('relay error');
+      showToast(i18nGet(lang, 'toast.success'));
+      form.reset();
+    } catch (err) {
+      showToast(i18nGet(lang, 'toast.sendError'));
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
+    }
   });
 
   /* ---------- Hero network canvas ---------- */
